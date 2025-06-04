@@ -1,0 +1,27 @@
+{
+    "name": "ahsanraza1/builtinchat",
+    "autoload": {
+        "psr-4": {
+            "Ahsanraza1\\Builtinchat\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ahsanraza1",
+            "email": "98.muhammadahsan@gmail.com"
+        }
+    ],
+    
+    "extra":{
+        "laravel":{
+            "providers": [
+                "Ahsanraza1\\Builtinchat\\BuiltInChatServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "livewire/livewire": "^2.0 || ^3.0"
+    },
+    "minimum-stability": "dev"
+}
