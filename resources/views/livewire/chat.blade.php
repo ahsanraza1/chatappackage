@@ -21,5 +21,5 @@
 </div>
 
 @assets
-    <link rel="stylesheet" type="text/css" href="{{ asset("assets/css/chat_card.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset("vendor/builtinchat/assets/css/chat_card.css") }}">
 @endassets

@@ -1,12 +1,17 @@
 <?php
 
-namespace ahsanraza1\builtinchat\Livewire;
+namespace Ahsanraza1\Builtinchat\Livewire;
 
 abstract class BaseComponent extends \Livewire\Component
 {
     public function render(){
-        return view($this->getView())
+        if( $this->getView()=="builtinchat::livewire.messenger"){
+            return view($this->getView())
             ->layout($this->getLayout());
+        }else{
+            return view($this->getView());
+//                ->layout($this->getLayout());
+        }
     }
 
     protected function getLayout(){

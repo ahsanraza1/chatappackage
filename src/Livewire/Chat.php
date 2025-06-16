@@ -1,6 +1,6 @@
 <?php
 
-namespace ahsanraza1\builtinchat\Livewire;
+namespace Ahsanraza1\Builtinchat\Livewire;
 
 use ahsanraza1\builtinchat\Models\Message;
 use ahsanraza1\builtinchat\Models\User;
@@ -16,7 +16,7 @@ class Chat extends BaseComponent
     public $lastMessage = '';
     public $time = '';
     public $userName = '';
-    public $userImage = "assets/images/default.png";
+    public $userImage = "vendor/builtinchat/assets/images/default.png";
 
     public function mount($chat)
     {
@@ -27,7 +27,7 @@ class Chat extends BaseComponent
         $lastMessage = Message::where("chat_id", $this->chat->id)->orderBy("created_at", "desc")->first();
 
         $this->userName = $user->name;
-        $this->userImage = optional($user->profile)->image? Storage::url(optional($user->profile)->image): "assets/images/default.png";
+        $this->userImage = optional($user->profile)->image? Storage::url(optional($user->profile)->image): "vendor/builtinchat/assets/images/default.png";
         // dd($lastMessage);
         $this->lastMessage = optional($lastMessage)->message;
         if($lastMessage){

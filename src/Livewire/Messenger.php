@@ -1,6 +1,7 @@
 <?php
 
-namespace ahsanraza1\builtinchat\Livewire;
+// namespace ahsanraza1\builtinchat\Livewire;
+namespace Ahsanraza1\Builtinchat\Livewire;
 
 use Livewire\Attributes\On;
 use Livewire\Component;

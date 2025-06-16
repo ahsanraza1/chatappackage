@@ -1,6 +1,6 @@
 <?php
 
-namespace ahsanraza1\builtinchat\Livewire;
+namespace Ahsanraza1\Builtinchat\Livewire;
 
 use ahsanraza1\builtinchat\Models\Chat;
 use ahsanraza1\builtinchat\Models\User;

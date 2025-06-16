@@ -59,5 +59,5 @@
     </div>
 </div>
 @assets
-    <link rel="stylesheet" type="text/css" href="{{ asset("assets/css/message_box.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset("vendor/builtinchat/assets/css/message_box.css") }}">
 @endassets

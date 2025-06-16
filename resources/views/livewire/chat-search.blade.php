@@ -12,7 +12,7 @@
         <div class="chat-list" wire:click="click({{ $index }})">
             <div class="chat-item">
               <div class="avatar" style="width: 40px; height: 40px;">
-                <img src="{{asset(optional($result["data"]["profile"] )['image']?Storage::url( $result["data"]["profile"]['image'] ):'assets/images/default.png')}}" alt="User Avatar" style="width:100%;height:100%">
+                <img src="{{asset(optional($result["data"]["profile"] )['image']?Storage::url( $result["data"]["profile"]['image'] ):'vendor/builtinchat/assets/images/default.png')}}" alt="User Avatar" style="width:100%;height:100%">
               </div>
               <div class="chat-info">
                 <div class="chat-header">
@@ -31,5 +31,5 @@
     </div>
 </div>
 @assets
-    <link rel="stylesheet" type="text/css" href="{{ asset("assets/css/chat_search.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset("vendor/builtinchat/assets/css/chat_search.css") }}">
 @endassets

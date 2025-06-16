@@ -32,6 +32,10 @@ class BuiltInChatServiceProvider extends ServiceProvider
             __DIR__.'/database/migrations' =>database_path('migrations')], 'builtinchat-migrations'
         );
 
+        $this->publishes([
+            __DIR__.'/../public' => public_path('vendor/builtinchat'),
+        ], 'builtinchat-assets');
+
     }
 
      public function register()

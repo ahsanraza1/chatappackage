@@ -1,6 +1,6 @@
 <?php
 
-namespace ahsanraza1\builtinchat\Livewire;
+namespace Ahsanraza1\Builtinchat\Livewire;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;

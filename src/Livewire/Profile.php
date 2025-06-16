@@ -1,6 +1,6 @@
 <?php
 
-namespace ahsanraza1\builtinchat\Livewire;
+namespace Ahsanraza1\Builtinchat\Livewire;
 
 use Exception;
 use Illuminate\Support\Facades\Auth;
@@ -20,7 +20,7 @@ class Profile extends \ahsanraza1\builtinchat\Livewire\BaseComponent
         $user = Auth::user();
         $user = \ahsanraza1\builtinchat\Models\User::find($user->id);
         $this->user = $user;
-        $this->current_image = optional($user->profile)->image? Storage::url(optional($user->profile)->image): "assets/images/default.png";
+        $this->current_image = optional($user->profile)->image? Storage::url(optional($user->profile)->image): "vendor/builtinchat/assets/images/default.png";
     }
     public function getView()
     {

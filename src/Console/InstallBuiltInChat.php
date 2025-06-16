@@ -29,6 +29,8 @@ class InstallBuiltInChat extends \Illuminate\Console\Command
             '--class' => 'UserSeeder',
             '--force' => true,
         ]);
+        $this->info('Publishing package seeders...');
+        $this->call('vendor:publish', ['--tag' => 'builtinchat-assets', '--force' => true]);
 
         $this->info('BuiltInChat package installed successfully!');
     }

@@ -17,7 +17,7 @@
     border-radius: 50%;
     overflow: hidden;
     margin-right: 12px;">
-                <img style="width: 100%; height: 100%;" src="{{ asset(optional($theotheruser->profile)->image?Storage::url( $theotheruser->profile->image ):'assets/images/default.png') }}" style="width: 100%; height: 100%;">
+                <img style="width: 100%; height: 100%;" src="{{ asset(optional($theotheruser->profile)->image?Storage::url( $theotheruser->profile->image ):'vendor/builtinchat/assets/images/default.png') }}" style="width: 100%; height: 100%;">
             </span>
             <span style="font-weight: bold;
     font-size: x-large">
