@@ -1,5 +1,7 @@
 {
     "name": "ahsanraza1/builtinchat",
+    "description": "A Livewire-based real-time chat package for Laravel apps.",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Ahsanraza1\\Builtinchat\\": "src/"
