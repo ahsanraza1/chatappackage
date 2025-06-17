@@ -6,7 +6,7 @@ namespace Ahsanraza1\Builtinchat\Livewire;
 use Livewire\Attributes\On;
 use Livewire\Component;
 
-class Messenger extends \ahsanraza1\builtinchat\Livewire\BaseComponent
+class Messenger extends \Ahsanraza1\Builtinchat\Livewire\BaseComponent
 {
     public $currentView = "chatlist";
     protected function getView()
